@@ -499,6 +499,10 @@ body.bodyy,
 }
 
 
+body{
+   width: 70%;
+   margin-left: 20%;
+}
 
 
 
@@ -508,6 +512,15 @@ body.bodyy,
 
 
 
+.explication{
+    flex-direction: column;
+    padding-right: 30px;
+    gap: 40px;
+    margin-top: -30px;
+    font-size: 13px;
+    opacity: .7;
+   
+}
 
 
 @media all and (max-width: 771px) {
@@ -519,6 +532,11 @@ body.bodyy,
         margin-top: 10px;
         font-size: 14px;
     }
+
+    body{
+        width: 100%;
+        margin-left: 0px;
+     }
 
     .divclass {
         background: #0c0f0a;
@@ -604,21 +622,41 @@ body.bodyy,
 }
 
 #cookie{
+    width: 70%;
+    bottom: 0;
     background-image: url("image-pyton/téléchargement\ \(1\).jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 30px;
     position: absolute;
-    left: 0;
-    right: 0;
-    margin-bottom: 130px;
-    bottom: 0;
+    height: 30vh;
     border-top-left-radius: 60px;
     border-top-right-radius: 60px;
     /* border-radius: 30px; */
     opacity: 1;
     z-index: 1;
     transition: .2s ease-in-out;
+}
+
+@media all and (max-width: 771px) {
+    #cookie{
+        background-image: url("image-pyton/téléchargement\ \(1\).jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding: 30px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-bottom: 130px;
+        bottom: 0;
+        border-top-left-radius: 60px;
+        border-top-right-radius: 60px;
+        /* border-radius: 30px; */
+        opacity: 1;
+        z-index: 1;
+        transition: .2s ease-in-out;
+    }
 }
 
 #cookie p{
